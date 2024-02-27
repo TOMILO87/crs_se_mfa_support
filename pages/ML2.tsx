@@ -20,7 +20,8 @@ export default function ML2() {
 
   async function loadModelPublic() {
     // Construct the full path to the model file inside the public folder
-    const modelPath = "http://localhost:3000/my-model.json";
+    //const modelPath = "http://localhost:3000/my-model.json";
+    const modelPath = "https://crs-se-mfa-support.vercel.app/my-model.json";
 
     // Load the model using the constructed path
     const model = await tf.loadLayersModel(modelPath);
